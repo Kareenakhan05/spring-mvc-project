@@ -1,0 +1,144 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: center;  /* Centers content horizontally */
+    align-items: center;
+    height: 150px;  /* Adjust height */
+    background-color: #333;
+    color: #fff;
+    position: relative;
+}
+
+header .logo h1 {
+    font-size: 3rem;  /* Make the logo title stand out */
+    margin: 0;
+}
+
+/* Container for the wallpaper section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;  /* Center the content */
+}
+
+/* Section heading styling */
+#wallpapers h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Product section styling */
+.product-wallpaper {
+    display: inline-block;
+    width: 30%;  /* Adjust the width for responsiveness */
+    margin: 20px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-wallpaper img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-wallpaper h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.product-wallpaper p {
+    font-size: 1rem;
+    color: #555;
+    margin: 15px 0;
+}
+
+.product-wallpaper:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Form styling */
+form {
+    margin-top: 10px;
+    text-align: left;
+}
+
+form label {
+    font-size: 1rem;
+    color: #333;
+}
+
+form select {
+    margin: 5px 0 15px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form .cta-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+form .cta-button:hover {
+    background-color: #218838;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .product-wallpaper {
+        width: 100%;
+    }
+    
+    header .logo h1 {
+        font-size: 2.5rem;
+    }
+
+    #wallpapers h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .product-wallpaper {
+        width: 45%;
+    }
+}
+.product-wallpaper img {
+    width: 100%;
+    height: 200px; /* Set the same height for all images */
+    object-fit: cover; /* Ensures the image is scaled and cropped */
+    border-radius: 5px; /* Keep the corners rounded */
+}
