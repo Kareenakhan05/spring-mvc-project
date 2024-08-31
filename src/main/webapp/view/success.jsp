@@ -79,12 +79,7 @@
         <div class="container">
             <h2>Thank You!</h2>
             <p>Your form has been successfully submitted.</p>
-            <p>Here’s the information you provided:</p>
-            <ul>
-                <li><strong>Name:</strong> ${formData.name}</li>
-                <li><strong>Email:</strong> ${formData.email}</li>
-                <li><strong>Message:</strong> ${formData.message}</li>
-            </ul>
+            
             <a href="${pageContext.request.contextPath}/index" class="cta-button">Go Back to Home</a>
         </div>
     </section>
